@@ -126,8 +126,10 @@
               "bottomRow": 35,
               "columnWidthMap": {
                 "task": 245,
-                "step": 185,
-                "status": 263
+                "step": 98,
+                "status": 263,
+                "customColumn1": 131,
+                "customColumn2": 125
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -654,7 +656,7 @@
               "textSize": "0.875rem",
               "widgetId": "a42b6l1uuc",
               "minWidth": 450,
-              "tableData": "[\n  {\n    \"step\": \"#1\",\n    \"task\": \"Drop a table\",\n    \"status\": \"hi\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#2\",\n    \"task\": \"Create a query fetch_users with the Mock DB\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#3\",\n    \"task\": \"Bind the query using => fetch_users.data\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  }\n]",
+              "tableData": "[\n  {\n    \"step\": \"114974\",\n    \"task\": \"Drop a table\",\n    \"status\": \"hi\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#2\",\n    \"task\": \"Create a query fetch_users with the Mock DB\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#3\",\n    \"task\": \"Bind the query using => fetch_users.data\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  }\n]",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
