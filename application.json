@@ -3,6 +3,18 @@
     {
       "id": "Temp",
       "isDefault": true
+    },
+    {
+      "id": "Dog Need Info",
+      "isDefault": false
+    },
+    {
+      "id": "Adoption Page",
+      "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
     }
   ],
   "viewMode": false,
