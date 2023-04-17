@@ -142,7 +142,7 @@ CREATE TABLE IF NOT EXISTS dog (
     breed VARCHAR(50) NOT NULL,
     weight INTEGER NOT NULL,
     housebroken BOOLEAN NOT NULL,
-    temperament VARCHAR(50) NOT NULL,
+    temperament BOOLEAN NOT NULL,
     dietary_restriction VARCHAR(50) NOT NULL,
     sex VARCHAR(50) NOT NULL,
     caretaker_id INTEGER UNIQUE NOT NULL,
