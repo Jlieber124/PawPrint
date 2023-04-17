@@ -5,7 +5,11 @@
       "isDefault": true
     },
     {
-      "id": "Operations Volunteer",
+      "id": "Inventory",
+      "isDefault": false
+    },
+    {
+      "id": "Contacts",
       "isDefault": false
     }
   ],
