@@ -165,7 +165,7 @@ CREATE TABLE IF NOT EXISTS cat (
     sex VARCHAR(50) NOT NULL,
     age VARCHAR(50) NOT NULL,
     neutered BOOLEAN NOT NULL,
-    temperament VARCHAR(50) NOT NULL,
+    temperament BOOLEAN NOT NULL,
     dietary_restrictions VARCHAR(50) NOT NULL,
     weight INTEGER NOT NULL,
     caretaker_id INTEGER UNIQUE NOT NULL,
