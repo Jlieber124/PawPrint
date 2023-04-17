@@ -3,6 +3,10 @@
     {
       "id": "Temp",
       "isDefault": true
+    },
+    {
+      "id": "Operations Volunteer",
+      "isDefault": false
     }
   ],
   "viewMode": false,
