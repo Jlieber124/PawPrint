@@ -5,6 +5,11 @@
       "isDefault": true
     },
     {
+      "id": "Inventory",
+      "isDefault": false
+    },
+    {
+      "id": "Contacts",
       "id": "Dog Need Info",
       "isDefault": false
     },
