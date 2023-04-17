@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS dog (
 CREATE TABLE IF NOT EXISTS cat (
     catID INTEGER UNIQUE NOT NULL,
     location INTEGER NOT NULL,
-    need_feeding INTEGER NOT NULL,
+    need_food INTEGER NOT NULL,
     need_liter_cleaning BOOLEAN NOT NULL,
     breed VARCHAR(50) NOT NULL,
     chip_status BOOLEAN NOT NULL,
