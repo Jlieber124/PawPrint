@@ -5,6 +5,14 @@
       "isDefault": true
     },
     {
+      "id": "Dog Need Info",
+      "isDefault": false
+    },
+    {
+      "id": "Adoption Page",
+      "isDefault": false
+    },
+    {
       "id": "Operations Volunteer",
       "isDefault": false
     }
