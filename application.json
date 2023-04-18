@@ -20,6 +20,10 @@
     {
       "id": "Operations Volunteer",
       "isDefault": false
+    },
+    {
+      "id": "AnimalInfoTable",
+      "isDefault": false
     }
   ],
   "viewMode": false,

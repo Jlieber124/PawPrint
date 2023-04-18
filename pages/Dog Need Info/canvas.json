@@ -87,7 +87,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button1",
+              "widgetName": "DogFoodComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -135,7 +135,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button1Copy",
+              "widgetName": "CatFoodComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -399,7 +399,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button2",
+              "widgetName": "DogBathComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -447,7 +447,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button2Copy",
+              "widgetName": "CatBathComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -603,7 +603,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button3",
+              "widgetName": "DogWalkComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -651,7 +651,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button3Copy",
+              "widgetName": "CatLiterCleanComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -807,7 +807,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button4",
+              "widgetName": "DogFoodNotComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -855,7 +855,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button4Copy",
+              "widgetName": "CatFoodNotComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -903,7 +903,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button5",
+              "widgetName": "DogBathNotComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -951,7 +951,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button5Copy",
+              "widgetName": "CatBathNotComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -999,7 +999,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button6",
+              "widgetName": "DogBathNotCompleted",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1047,7 +1047,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button6Copy",
+              "widgetName": "CatLiterCleanNotComplete",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
