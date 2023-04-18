@@ -5,7 +5,7 @@
       "isDefault": true
     },
     {
-      "id": "Inventory",
+      "id": "Inventory Status",
       "isDefault": false
     },
     {
@@ -21,7 +21,7 @@
       "isDefault": false
     },
     {
-      "id": "Page1",
+      "id": "Update Inventory",
       "isDefault": false
     }
   ],
