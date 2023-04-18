@@ -296,6 +296,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1Copy1",
+                      "onClick": "{{getQuantity.run()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -305,9 +306,15 @@
                       ],
                       "topRow": 14,
                       "bottomRow": 18,
+                      "tooltip": "",
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 21,
                       "dynamicBindingPathList": [
                         {
@@ -341,61 +348,71 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Select1Copy",
-                      "isFilterable": true,
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "Item Category",
+                      "widgetName": "ItemID_for_Quant",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "onSubmit": "{{getQuantity.run()}}",
                       "searchTags": [
-                        "dropdown"
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
                       ],
                       "topRow": 5,
                       "bottomRow": 12,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
-                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `dog poop bags`))(Select1Copy.options, Select1Copy.serverSideFiltering) }}",
                       "animateLoading": true,
-                      "parentColumnSpace": 4.57421875,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "parentColumnSpace": 4.37060546875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 19,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "[\n  {\n    \"label\": \"Dog Food\",\n    \"value\": \"dog food\"\n  },\n  {\n    \"label\": \"Cat Food\",\n    \"value\": \"cat food\"\n  },\n  {\n    \"label\": \"Dog Treats\",\n    \"value\": \"dog treats\"\n  },\n  {\n    \"label\": \"Cat Treats\",\n    \"value\": \"cat treats\"\n  },\n  {\n    \"label\": \"Dog Toys\",\n    \"value\": \"dog toys\"\n  },\n  {\n    \"label\": \"Cat Toys\",\n    \"value\": \"cat toys\"\n  },\n  {\n    \"label\": \"Dog Leash\",\n    \"value\": \"dog leash\"\n  },\n  {\n    \"label\": \"Dog Poop Bags\",\n    \"value\": \"dog poop bags\"\n  },\n  {\n    \"label\": \"Cat Litter\",\n    \"value\": \"cat litter\"\n  }\n]",
-                      "placeholderText": "Select option",
+                      "labelStyle": "",
+                      "inputType": "NUMBER",
                       "isDisabled": false,
-                      "key": "9zvut9bc68",
+                      "key": "pfll6ppxnv",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 61,
+                      "rightColumn": 39,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "4anipp8vww",
+                      "widgetId": "b97cf6ppyr",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
                       "minWidth": 450,
                       "isVisible": true,
-                      "version": 1,
+                      "label": "Item ID",
+                      "version": 2,
                       "parentId": "eekosgfbda",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 15,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 22,
+                      "iconAlign": "left",
+                      "defaultText": "",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -623,7 +640,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
               "topRow": 56,
-              "bottomRow": 71,
+              "bottomRow": 73,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -648,7 +665,7 @@
                   "tabId": "tab1",
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
-                  "bottomRow": 110,
+                  "bottomRow": 130,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -662,7 +679,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "widgetName": "Text3",
+                      "widgetName": "Text6",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -670,17 +687,17 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 3,
-                      "bottomRow": 7,
+                      "topRow": 0,
+                      "bottomRow": 11,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "parentColumnSpace": 4.57421875,
+                      "parentColumnSpace": 4.1669921875,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 18,
+                      "leftColumn": 12,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -690,17 +707,20 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
                         }
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "/",
-                      "key": "n2mm2k1bv8",
+                      "text": "{{getQuantity.data}}",
+                      "key": "4fzgb6b2m8",
                       "isDeprecated": false,
-                      "rightColumn": 50,
+                      "rightColumn": 54,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "af3jdxi5n4",
+                      "widgetId": "crwfhbozwc",
                       "minWidth": 450,
                       "isVisible": true,
                       "fontStyle": "BOLD",
@@ -710,8 +730,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
+                      "originalTopRow": 0,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
+                      "originalBottomRow": 195,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
@@ -1127,12 +1149,25 @@
               "originalTopRow": 56,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 71,
+              "originalBottomRow": 257,
               "minDynamicHeight": 15
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Inventory Status_getQuantity",
+              "name": "getQuantity",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "ItemID_for_Quant.inputText"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Inventory Status",
