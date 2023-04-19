@@ -1,0 +1,2 @@
+{{{"need_litter_cleaning": Cat_Table.updatedRow.need_litter_cleaning,
+	"need_food": Cat_Table.updatedRow.need_food}}}

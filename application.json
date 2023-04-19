@@ -1,12 +1,8 @@
 {
   "pages": [
     {
-      "id": "Temp",
-      "isDefault": true
-    },
-    {
       "id": "Inventory Status",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Dog Need Info",

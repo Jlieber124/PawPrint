@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 790,
+          "bottomRow": 880,
           "containerStyle": "none",
           "snapRows": 83,
           "parentRowSpace": 1,
@@ -26,159 +26,751 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "none",
-              "widgetName": "dog_id",
-              "displayName": "Input",
-              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "searchTags": [
-                "form",
-                "text input",
-                "number",
-                "textarea"
-              ],
-              "topRow": 3,
-              "bottomRow": 10,
-              "parentRowSpace": 10,
-              "labelWidth": 5,
-              "autoFocus": false,
-              "type": "INPUT_WIDGET_V2",
-              "hideCard": false,
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#1d4ed8",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 9,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "resetOnSubmit": true,
-              "leftColumn": 22,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
                 },
                 {
-                  "key": "borderRadius"
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.dog_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.name_dog.computedValue"
+                },
+                {
+                  "key": "primaryColumns.need_clean.computedValue"
+                },
+                {
+                  "key": "primaryColumns.need_food.computedValue"
+                },
+                {
+                  "key": "primaryColumns.need_walk.computedValue"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveButtonColor"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.discardBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
                 }
               ],
-              "labelPosition": "Top",
-              "labelStyle": "",
-              "inputType": "TEXT",
-              "isDisabled": false,
-              "key": "nppqq8t1pz",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 42,
-              "dynamicHeight": "FIXED",
-              "widgetId": "gpauiyamuf",
+              "needsHeightForContent": true,
+              "leftColumn": 12,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": false,
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "1.5rem",
+              "columnUpdatedAt": 1681933642971,
+              "originalBottomRow": 46,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Dog_Table",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "dog_id",
+                "name_dog",
+                "need_clean",
+                "need_food",
+                "need_walk",
+                "EditActions1"
+              ],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                }
+              ],
+              "displayName": "Table",
+              "bottomRow": 48,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 70,
+                "status": 85,
+                "need_clean": 179,
+                "need_food": 170,
+                "dog_id": 117,
+                "name_dog": 140,
+                "need_walk": 172
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.onDiscard"
+                },
+                {
+                  "key": "primaryColumns.need_food.onCheckChange"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.onSave"
+                },
+                {
+                  "key": "primaryColumns.need_clean.onCheckChange"
+                },
+                {
+                  "key": "primaryColumns.need_walk.onCheckChange"
+                }
+              ],
+              "borderWidth": "2",
+              "primaryColumns": {
+                "dog_id": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "dog_id",
+                  "id": "dog_id",
+                  "alias": "dog_id",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Dog ID",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dog_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "name_dog": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "name_dog",
+                  "id": "name_dog",
+                  "alias": "name_dog",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Dog Name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name_dog\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "need_clean": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "need_clean",
+                  "id": "need_clean",
+                  "alias": "need_clean",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "switch",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Need cleaning?",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"need_clean\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "",
+                  "customAlias": "",
+                  "onCheckChange": "{{UpdateDogClean.run(() => {}, () => showAlert('Select the row you wish to edit prior to toggling'))}}"
+                },
+                "need_food": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "need_food",
+                  "id": "need_food",
+                  "alias": "need_food",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "switch",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Need food?",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"need_food\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "",
+                  "onCheckChange": "{{UpdateDogFood.run(() => {}, () => showAlert('Select the row you wish to edit prior to toggling','error'))}}"
+                },
+                "need_walk": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "need_walk",
+                  "id": "need_walk",
+                  "alias": "need_walk",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "switch",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Need walk?",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"need_walk\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "",
+                  "onCheckChange": "{{UpdateDogWalk.run(() => {}, () => showAlert('Select the row you wish to edit prior to toggling','error'))}}"
+                },
+                "EditActions1": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "EditActions1",
+                  "id": "EditActions1",
+                  "alias": "EditActions1",
+                  "horizontalAlignment": "CENTER",
+                  "columnType": "editActions",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Save / Discard",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "right",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "saveIconAlign": "left",
+                  "discardIconAlign": "left",
+                  "saveActionLabel": "Save",
+                  "discardActionLabel": "Discard",
+                  "saveButtonColor": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "discardButtonColor": "#F22B2B",
+                  "saveBorderRadius": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardBorderRadius": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardButtonVariant": "TERTIARY",
+                  "isSaveDisabled": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( !Dog_Table.updatedRowIndices.includes(currentIndex)))}}",
+                  "isDiscardDisabled": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( !Dog_Table.updatedRowIndices.includes(currentIndex)))}}",
+                  "onDiscard": "{{clearStore()}}",
+                  "onSave": "{{dogNeedCare.run()}}"
+                }
+              },
+              "key": "mjusr87bbf",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 60,
+              "textSize": "0.875rem",
+              "widgetId": "14me9l2ygm",
               "minWidth": 450,
-              "isVisible": true,
-              "label": "Dog ID",
-              "version": 2,
+              "tableData": "{{dogNeedCare.data}}",
+              "label": "Data",
+              "searchKey": "",
               "parentId": "0",
-              "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "isLoading": false,
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "iconAlign": "left",
-              "defaultText": "",
-              "minDynamicHeight": 4
+              "originalTopRow": 12,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
             },
             {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "DogFoodComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 19,
-              "bottomRow": 23,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#6366f1",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 50,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 18,
               "dynamicBindingPathList": [
                 {
-                  "key": "buttonColor"
+                  "key": "accentColor"
                 },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.need_food.computedValue"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveButtonColor"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.discardBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                },
+                {
+                  "key": "primaryColumns.catID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.name_cat.computedValue"
+                },
+                {
+                  "key": "primaryColumns.need_litter_cleaning.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 12,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "showInlineEditingOptionDropdown": true,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "1.5rem",
+              "columnUpdatedAt": 1681934716860,
+              "originalBottomRow": 88,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Cat_Table",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "catID",
+                "name_cat",
+                "need_litter_cleaning",
+                "need_food",
+                "EditActions1"
+              ],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                }
+              ],
+              "displayName": "Table",
+              "bottomRow": 88,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 70,
+                "status": 85,
+                "need_clean": 172,
+                "need_food": 190,
+                "dog_id": 105,
+                "name_dog": 141,
+                "need_walk": 169,
+                "need_litter_cleaning": 207,
+                "name_cat": 244,
+                "catID": 165
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.onDiscard"
+                },
+                {
+                  "key": "primaryColumns.need_food.onCheckChange"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.onSave"
+                },
+                {
+                  "key": "primaryColumns.need_litter_cleaning.onCheckChange"
+                }
+              ],
+              "borderWidth": "2",
+              "primaryColumns": {
+                "need_food": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "need_food",
+                  "id": "need_food",
+                  "alias": "need_food",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "switch",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Need food?",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"need_food\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#eff6ff",
+                  "onCheckChange": "{{UpdateCatFood.run()}}"
+                },
+                "EditActions1": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "EditActions1",
+                  "id": "EditActions1",
+                  "alias": "EditActions1",
+                  "horizontalAlignment": "CENTER",
+                  "columnType": "editActions",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Save / Discard",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "right",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "saveIconAlign": "left",
+                  "discardIconAlign": "left",
+                  "saveActionLabel": "Save",
+                  "discardActionLabel": "Discard",
+                  "saveButtonColor": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "discardButtonColor": "#F22B2B",
+                  "saveBorderRadius": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardBorderRadius": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardButtonVariant": "TERTIARY",
+                  "isSaveDisabled": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( !Cat_Table.updatedRowIndices.includes(currentIndex)))}}",
+                  "isDiscardDisabled": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( !Cat_Table.updatedRowIndices.includes(currentIndex)))}}",
+                  "onDiscard": "{{clearStore()}}",
+                  "onSave": "{{catNeedCare.run()}}",
+                  "cellBackground": "#eff6ff"
+                },
+                "catID": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "catID",
+                  "id": "catID",
+                  "alias": "catID",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Cat ID",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"catID\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#eff6ff"
+                },
+                "name_cat": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "name_cat",
+                  "id": "name_cat",
+                  "alias": "name_cat",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Cat Name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name_cat\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#eff6ff"
+                },
+                "need_litter_cleaning": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "need_litter_cleaning",
+                  "id": "need_litter_cleaning",
+                  "alias": "need_litter_cleaning",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "switch",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Need litter cleaned?",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"need_litter_cleaning\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#eff6ff",
+                  "onCheckChange": "{{UpdateCatClean.run(() => {}, () => showAlert('Select the row you wish to edit prior to toggling','error'))}}"
+                }
+              },
+              "key": "mjusr87bbf",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 60,
+              "textSize": "0.875rem",
+              "widgetId": "uq43in4s2d",
+              "minWidth": 450,
+              "tableData": "{{catNeedCare.data}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": true,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 55,
+              "isVisiblePagination": true,
+              "cellBackground": "#eff6ff",
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Image1",
+              "displayName": "Image",
+              "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
+              "topRow": 22,
+              "bottomRow": 44,
+              "parentRowSpace": 10,
+              "type": "IMAGE_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "imageShape": "RECTANGLE",
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
                 }
               ],
-              "text": "Completed",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
+              "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+              "key": "1hx0w99q6n",
+              "image": "https://pngimg.com/d/dog_PNG50322.png\n",
               "isDeprecated": false,
-              "rightColumn": 34,
-              "isDefaultClickDisabled": true,
-              "widgetId": "z0hdvzsbdg",
-              "minWidth": 120,
+              "rightColumn": 11,
+              "objectFit": "cover",
+              "widgetId": "avekt3qv3r",
               "isVisible": true,
-              "recaptchaType": "V3",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
+              "maxZoomLevel": 1,
+              "enableDownload": false,
+              "originalTopRow": 22,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
+              "originalBottomRow": 44,
+              "enableRotation": false
             },
             {
-              "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "CatFoodComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 54,
-              "bottomRow": 58,
+              "widgetName": "Image2",
+              "displayName": "Image",
+              "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
+              "topRow": 62,
+              "bottomRow": 84,
               "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
+              "type": "IMAGE_WIDGET",
               "hideCard": false,
               "animateLoading": true,
-              "parentColumnSpace": 19.59375,
+              "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
-              "leftColumn": 18,
+              "imageShape": "RECTANGLE",
+              "leftColumn": 0,
               "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
                 {
                   "key": "borderRadius"
                 }
               ],
-              "text": "Completed",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
+              "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+              "key": "1hx0w99q6n",
+              "image": "https://pngfre.com/wp-content/uploads/cat-85-2-1024x775.png",
               "isDeprecated": false,
-              "rightColumn": 34,
-              "isDefaultClickDisabled": true,
-              "widgetId": "us4d6dn8s4",
-              "minWidth": 120,
+              "rightColumn": 12,
+              "objectFit": "cover",
+              "widgetId": "ke98hsci51",
               "isVisible": true,
-              "recaptchaType": "V3",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
+              "maxZoomLevel": 1,
+              "enableDownload": false,
+              "originalTopRow": 62,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
+              "originalBottomRow": 84,
+              "enableRotation": false
             },
             {
               "widgetName": "Text1",
@@ -189,17 +781,17 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 19,
-              "bottomRow": 23,
+              "topRow": 0,
+              "bottomRow": 7,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "overflow": "NONE",
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 19.59375,
+              "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
-              "leftColumn": 1,
+              "leftColumn": 23,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -213,13 +805,13 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Food",
-              "key": "y2lourar1e",
+              "text": "Animal Care Tracker",
+              "key": "fs32po5jln",
               "isDeprecated": false,
-              "rightColumn": 16,
+              "rightColumn": 47,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "kb554df078",
+              "widgetId": "uhk5u3ovu0",
               "minWidth": 450,
               "isVisible": true,
               "fontStyle": "BOLD",
@@ -229,9 +821,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 0,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
+              "originalBottomRow": 7,
+              "fontSize": "3rem",
               "minDynamicHeight": 4
             },
             {
@@ -243,17 +837,17 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 54,
-              "bottomRow": 58,
+              "topRow": 14,
+              "bottomRow": 21,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "overflow": "NONE",
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 19.59375,
+              "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
-              "leftColumn": 1,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -263,33 +857,38 @@
                 },
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "textColor"
                 }
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Food\n",
-              "key": "y2lourar1e",
+              "text": "Dog",
+              "key": "fs32po5jln",
               "isDeprecated": false,
-              "rightColumn": 16,
-              "textAlign": "LEFT",
+              "rightColumn": 10,
+              "textAlign": "CENTER",
               "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "w1i3b16gmz",
+              "widgetId": "eza1bw5tfp",
               "minWidth": 450,
               "isVisible": true,
               "fontStyle": "BOLD",
-              "textColor": "#231F20",
+              "textColor": "{{appsmith.theme.colors.primaryColor}}",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 14,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
+              "originalBottomRow": 21,
+              "fontSize": "3rem",
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Text2",
+              "widgetName": "Text1CopyCopy",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -297,17 +896,17 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 29,
-              "bottomRow": 33,
+              "topRow": 55,
+              "bottomRow": 62,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "overflow": "NONE",
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 19.59375,
+              "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
-              "leftColumn": 1,
+              "leftColumn": 5,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -321,898 +920,51 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Bath",
-              "key": "y2lourar1e",
+              "text": "Cat",
+              "key": "fs32po5jln",
               "isDeprecated": false,
-              "rightColumn": 17,
+              "rightColumn": 10,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "vaoem8t44g",
+              "widgetId": "muj2012apx",
               "minWidth": 450,
               "isVisible": true,
               "fontStyle": "BOLD",
-              "textColor": "#231F20",
+              "textColor": "#3b82f6",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 55,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "widgetName": "Text2Copy",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-              "searchTags": [
-                "typography",
-                "paragraph",
-                "label"
-              ],
-              "topRow": 64,
-              "bottomRow": 68,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "overflow": "NONE",
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "truncateButtonColor"
-                },
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Bath",
-              "key": "y2lourar1e",
-              "isDeprecated": false,
-              "rightColumn": 17,
-              "textAlign": "LEFT",
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "yzoe3oh641",
-              "minWidth": 450,
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "DogBathComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 29,
-              "bottomRow": 33,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 18,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Completed\n",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 34,
-              "isDefaultClickDisabled": true,
-              "widgetId": "hhvy7sn41k",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "CatBathComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 64,
-              "bottomRow": 68,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 18,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Completed\n",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 34,
-              "isDefaultClickDisabled": true,
-              "widgetId": "mwiplhhb8a",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "widgetName": "Text3",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-              "searchTags": [
-                "typography",
-                "paragraph",
-                "label"
-              ],
-              "topRow": 40,
-              "bottomRow": 44,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "overflow": "NONE",
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "truncateButtonColor"
-                },
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Walk",
-              "key": "y2lourar1e",
-              "isDeprecated": false,
-              "rightColumn": 17,
-              "textAlign": "LEFT",
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "o3y62uk877",
-              "minWidth": 450,
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "widgetName": "Text3Copy",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-              "searchTags": [
-                "typography",
-                "paragraph",
-                "label"
-              ],
-              "topRow": 75,
-              "bottomRow": 79,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "overflow": "NONE",
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "truncateButtonColor"
-                },
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Liter Clean",
-              "key": "y2lourar1e",
-              "isDeprecated": false,
-              "rightColumn": 17,
-              "textAlign": "LEFT",
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "ytk9pga9rk",
-              "minWidth": 450,
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "DogWalkComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 40,
-              "bottomRow": 44,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 18,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Completed\n",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 34,
-              "isDefaultClickDisabled": true,
-              "widgetId": "3i12fwivnw",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "CatLiterCleanComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 75,
-              "bottomRow": 79,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 18,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Completed\n",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 34,
-              "isDefaultClickDisabled": true,
-              "widgetId": "oppxfyjh2g",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "widgetName": "Text5",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-              "searchTags": [
-                "typography",
-                "paragraph",
-                "label"
-              ],
-              "topRow": 12,
-              "bottomRow": 16,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "overflow": "NONE",
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "truncateButtonColor"
-                },
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Care Info Dog",
-              "key": "y2lourar1e",
-              "isDeprecated": false,
-              "rightColumn": 17,
-              "textAlign": "LEFT",
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "f2jozjwcug",
-              "minWidth": 450,
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "widgetName": "Text5Copy",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-              "searchTags": [
-                "typography",
-                "paragraph",
-                "label"
-              ],
-              "topRow": 47,
-              "bottomRow": 51,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "overflow": "NONE",
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "truncateButtonColor"
-                },
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Care Info Cat\n",
-              "key": "y2lourar1e",
-              "isDeprecated": false,
-              "rightColumn": 17,
-              "textAlign": "LEFT",
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "zeghqe7at0",
-              "minWidth": 450,
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "DogFoodNotComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 19,
-              "bottomRow": 23,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 36,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Not Completed",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 52,
-              "isDefaultClickDisabled": true,
-              "widgetId": "wik805gc1i",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "CatFoodNotComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 54,
-              "bottomRow": 58,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 36,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Not Completed",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 52,
-              "isDefaultClickDisabled": true,
-              "widgetId": "z717k57us2",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "DogBathNotComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 29,
-              "bottomRow": 33,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 36,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Not Completed\n",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 52,
-              "isDefaultClickDisabled": true,
-              "widgetId": "61j00m0c53",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "CatBathNotComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 64,
-              "bottomRow": 68,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 36,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Not Completed\n",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 52,
-              "isDefaultClickDisabled": true,
-              "widgetId": "f8zu9ngf0h",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "DogBathNotCompleted",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 40,
-              "bottomRow": 44,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 36,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Not Completed",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 52,
-              "isDefaultClickDisabled": true,
-              "widgetId": "78cavo835b",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "CatLiterCleanNotComplete",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 75,
-              "bottomRow": 79,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 36,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Not Completed",
-              "isDisabled": false,
-              "key": "eiekrzfnxg",
-              "isDeprecated": false,
-              "rightColumn": 52,
-              "isDefaultClickDisabled": true,
-              "widgetId": "p1hv5gcdoj",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "Input2",
-              "displayName": "Input",
-              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "searchTags": [
-                "form",
-                "text input",
-                "number",
-                "textarea"
-              ],
-              "topRow": 3,
-              "bottomRow": 10,
-              "parentRowSpace": 10,
-              "labelWidth": 5,
-              "autoFocus": false,
-              "type": "INPUT_WIDGET_V2",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "resetOnSubmit": true,
-              "leftColumn": 44,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "labelPosition": "Top",
-              "labelStyle": "",
-              "inputType": "TEXT",
-              "isDisabled": false,
-              "key": "nppqq8t1pz",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "dynamicHeight": "FIXED",
-              "widgetId": "og574k69wq",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": false,
-              "minWidth": 450,
-              "isVisible": true,
-              "label": "Cat ID",
-              "version": 2,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "iconAlign": "left",
-              "defaultText": "",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "caretaker_id",
-              "displayName": "Input",
-              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "searchTags": [
-                "form",
-                "text input",
-                "number",
-                "textarea"
-              ],
-              "topRow": 3,
-              "bottomRow": 10,
-              "parentRowSpace": 10,
-              "labelWidth": 5,
-              "autoFocus": false,
-              "type": "INPUT_WIDGET_V2",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.59375,
-              "dynamicTriggerPathList": [],
-              "resetOnSubmit": true,
-              "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "labelPosition": "Top",
-              "labelStyle": "",
-              "inputType": "TEXT",
-              "isDisabled": false,
-              "key": "nppqq8t1pz",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 21,
-              "dynamicHeight": "FIXED",
-              "widgetId": "ee8rh2hybe",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": false,
-              "minWidth": 450,
-              "isVisible": true,
-              "label": "Caretaker ID",
-              "version": 2,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "iconAlign": "left",
-              "defaultText": "",
+              "originalBottomRow": 62,
+              "fontSize": "3rem",
               "minDynamicHeight": 4
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Dog Need Info_catNeedCare",
+              "name": "catNeedCare",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dog Need Info_dogNeedCare",
+              "name": "dogNeedCare",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Dog Need Info",

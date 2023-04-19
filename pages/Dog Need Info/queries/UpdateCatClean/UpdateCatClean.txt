@@ -1,0 +1,1 @@
+{{{"need_litter_cleaning": Cat_Table.selectedRow.need_litter_cleaning}}}
