@@ -1,0 +1,3 @@
+{{{"need_food": Dog_Table.updatedRow.need_food,
+	"need_clean": Dog_Table.updatedRow.need_clean,
+	"need_walk": Dog_Table.updatedRow.need_walk}}}

@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "UpdateDogWalk",
+    "name": "deleteDog",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/need_walk/{{Dog_Table.updatedRow.dog_id}}"
+        "url": "web:4000/c/dog/{{dogID.inputText}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Dog Need Info",
+    "pageId": "Adoption Page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{{\"need_walk\": Dog_Table.updatedRow.need_walk}}}",
+      "body": "",
       "bodyFormData": [],
-      "httpMethod": "PUT",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -39,14 +39,11 @@
         }
       ],
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
-      {
-        "key": "body"
-      },
       {
         "key": "datasourceUrl"
       }
@@ -55,15 +52,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Dog_Table.updatedRow.dog_id",
-      "{\"need_walk\": Dog_Table.updatedRow.need_walk}"
+      "dogID.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dog Need Info_UpdateDogWalk",
+  "id": "Adoption Page_deleteDog",
   "deleted": false,
-  "gitSyncId": "643f4b2ab8b4c8262fb4e6fd_64404678f6fa432285db20dd"
+  "gitSyncId": "643dac41c59797209a3eaccb_643ea83eeefe5b1f63f7783c"
 }

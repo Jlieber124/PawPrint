@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "UpdateDogClean",
+    "name": "updateDaCat",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/need_clean/{{Dog_Table.updatedRow.dog_id}}"
+        "url": "web:4000/c/updateCat/{{Cat_Table.selectedRow.catID}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Dog Need Info",
+    "pageId": "Animal Care Tracker",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{{\"need_clean\": Dog_Table.updatedRow.need_clean}}}",
+      "body": "{{{\"need_litter_cleaning\": Cat_Table.updatedRow.need_litter_cleaning,\n\t\"need_food\": Cat_Table.updatedRow.need_food}}}",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
@@ -46,24 +46,21 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
-      },
-      {
-        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Dog_Table.updatedRow.dog_id",
-      "{\"need_clean\": Dog_Table.updatedRow.need_clean}"
+      "Cat_Table.selectedRow.catID",
+      "{\"need_litter_cleaning\": Cat_Table.updatedRow.need_litter_cleaning,\n\t\"need_food\": Cat_Table.updatedRow.need_food}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dog Need Info_UpdateDogClean",
+  "id": "Animal Care Tracker_updateDaCat",
   "deleted": false,
-  "gitSyncId": "643f4b2ab8b4c8262fb4e6fd_644046dcf6fa432285db20df"
+  "gitSyncId": "643f4b2ab8b4c8262fb4e6fd_64404ff9f6fa432285db20ef"
 }

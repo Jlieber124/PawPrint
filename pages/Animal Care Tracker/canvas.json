@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Dog Need Info",
-    "slug": "dog-need-info",
+    "name": "Animal Care Tracker",
+    "slug": "animal-care-tracker",
     "layouts": [
       {
         "viewMode": false,
@@ -354,7 +354,7 @@
                   "isSaveDisabled": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( !Dog_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "isDiscardDisabled": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( !Dog_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "onDiscard": "{{clearStore()}}",
-                  "onSave": "{{UpdateDogClean.run(() => dogNeedCare.run(), () => {})}}"
+                  "onSave": "{{UpdateDog.run(() => dogNeedCare.run(), () => showAlert('Make sure to select the row you are editing before you save','warning'))}}"
                 }
               },
               "key": "mjusr87bbf",
@@ -582,7 +582,7 @@
                   "isSaveDisabled": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( !Cat_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "isDiscardDisabled": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( !Cat_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "onDiscard": "{{clearStore()}}",
-                  "onSave": "{{updateDaCat.run(() => catNeedCare.run(), () => {})}}",
+                  "onSave": "{{updateDaCat.run(() => catNeedCare.run(), () => showAlert('Make sure to select the row you are editing before you save','warning'))}}",
                   "cellBackground": "#eff6ff"
                 },
                 "catID": {
@@ -948,7 +948,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Dog Need Info_catNeedCare",
+              "id": "Animal Care Tracker_catNeedCare",
               "name": "catNeedCare",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -956,7 +956,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Dog Need Info_dogNeedCare",
+              "id": "Animal Care Tracker_dogNeedCare",
               "name": "dogNeedCare",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -967,7 +967,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Dog Need Info",
+        "id": "Animal Care Tracker",
         "deleted": false,
         "policies": [],
         "userPermissions": []

@@ -5,15 +5,11 @@
       "isDefault": true
     },
     {
-      "id": "Dog Need Info",
+      "id": "Animal Care Tracker",
       "isDefault": false
     },
     {
       "id": "Adoption Page",
-      "isDefault": false
-    },
-    {
-      "id": "AnimalInfoTable",
       "isDefault": false
     },
     {

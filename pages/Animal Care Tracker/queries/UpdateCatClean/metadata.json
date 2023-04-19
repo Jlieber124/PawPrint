@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "dogNeedCare",
+    "name": "UpdateCatClean",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/need_dogcare"
+        "url": "web:4000/c/need_catfood{{Cat_Table.selectedRow.catID}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Dog Need Info",
+    "pageId": "Animal Care Tracker",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "",
+      "body": "{{{\"need_litter_cleaning\": Cat_Table.selectedRow.need_litter_cleaning}}}",
       "bodyFormData": [],
-      "httpMethod": "GET",
+      "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -42,18 +42,28 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      },
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Cat_Table.selectedRow.catID",
+      "{\"need_litter_cleaning\": Cat_Table.selectedRow.need_litter_cleaning}"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dog Need Info_dogNeedCare",
+  "id": "Animal Care Tracker_UpdateCatClean",
   "deleted": false,
-  "gitSyncId": "643dac41c59797209a3eaccb_643e9e83eefe5b1f63f776fa"
+  "gitSyncId": "643f4b2ab8b4c8262fb4e6fd_64404a27f6fa432285db20e6"
 }
