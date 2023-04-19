@@ -256,7 +256,7 @@
                   "validation": {},
                   "cellBackground": "",
                   "customAlias": "",
-                  "onCheckChange": "{{UpdateDogClean.run(() => showAlert('updated dog clean'), () => showAlert('Select the row you wish to edit prior to toggling'))}}"
+                  "onCheckChange": ""
                 },
                 "need_food": {
                   "allowCellWrapping": false,
@@ -286,7 +286,7 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
-                  "onCheckChange": "{{UpdateDogFood.run(() => {}, () => showAlert('Select the row you wish to edit prior to toggling','error'))}}"
+                  "onCheckChange": ""
                 },
                 "need_walk": {
                   "allowCellWrapping": false,
@@ -316,7 +316,7 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "",
-                  "onCheckChange": "{{UpdateDogWalk.run(() => {}, () => showAlert('Select the row you wish to edit prior to toggling','error'))}}"
+                  "onCheckChange": ""
                 },
                 "EditActions1": {
                   "allowCellWrapping": false,
@@ -354,7 +354,7 @@
                   "isSaveDisabled": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( !Dog_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "isDiscardDisabled": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( !Dog_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "onDiscard": "{{clearStore()}}",
-                  "onSave": "{{UpdateDogClean.run()}}"
+                  "onSave": "{{UpdateDogClean.run(() => dogNeedCare.run(), () => {})}}"
                 }
               },
               "key": "mjusr87bbf",
@@ -544,7 +544,7 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "#eff6ff",
-                  "onCheckChange": "{{UpdateCatFood.run()}}"
+                  "onCheckChange": ""
                 },
                 "EditActions1": {
                   "allowCellWrapping": false,
@@ -582,7 +582,7 @@
                   "isSaveDisabled": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( !Cat_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "isDiscardDisabled": "{{Cat_Table.processedTableData.map((currentRow, currentIndex) => ( !Cat_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "onDiscard": "{{clearStore()}}",
-                  "onSave": "{{catNeedCare.run()}}",
+                  "onSave": "{{updateDaCat.run(() => catNeedCare.run(), () => {})}}",
                   "cellBackground": "#eff6ff"
                 },
                 "catID": {
@@ -671,7 +671,7 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "#eff6ff",
-                  "onCheckChange": "{{UpdateCatClean.run(() => {}, () => showAlert('Select the row you wish to edit prior to toggling','error'))}}"
+                  "onCheckChange": ""
                 }
               },
               "key": "mjusr87bbf",

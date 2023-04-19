@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/need_dogfood/{{Dog_Table.selectedRow.dog_id}}"
+        "url": "web:4000/c/need_dogfood/{{Dog_Table.updatedRow.dog_id}}"
       },
       "invalids": [],
       "messages": [],
@@ -55,7 +55,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Dog_Table.selectedRow.dog_id",
+      "Dog_Table.updatedRow.dog_id",
       "{\"need_food\": Dog_Table.updatedRow.need_food, \n\t}"
     ],
     "userSetOnLoad": false,
