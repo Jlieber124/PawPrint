@@ -5,15 +5,15 @@
       "isDefault": true
     },
     {
+      "id": "Update Inventory",
+      "isDefault": false
+    },
+    {
       "id": "Animal Care Tracker",
       "isDefault": false
     },
     {
       "id": "Adoption Page",
-      "isDefault": false
-    },
-    {
-      "id": "Update Inventory",
       "isDefault": false
     }
   ],
