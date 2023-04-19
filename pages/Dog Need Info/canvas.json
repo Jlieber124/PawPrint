@@ -27,7 +27,7 @@
           "children": [
             {
               "boxShadow": "none",
-              "widgetName": "Input1",
+              "widgetName": "dog_id",
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "searchTags": [
@@ -1153,7 +1153,7 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "Input3",
+              "widgetName": "caretaker_id",
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "searchTags": [
