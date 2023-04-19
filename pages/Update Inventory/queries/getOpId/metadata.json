@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "getAllInventory",
+    "name": "getOpId",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/o/inventory"
+        "url": "web:4000/o/getOpId"
       },
       "invalids": [],
       "messages": [],
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Update Inventory_getAllInventory",
+  "id": "Update Inventory_getOpId",
   "deleted": false,
-  "gitSyncId": "643ec108865230187b28e868_643eefc2865230187b28e88a"
+  "gitSyncId": "643f4b2ab8b4c8262fb4e6fd_643ff13ef6fa432285db208c"
 }

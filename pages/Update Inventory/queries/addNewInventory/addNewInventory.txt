@@ -1,0 +1,13 @@
+{{
+{"brand": brand_button.inputText,
+"quantity": quantity_button.inputText,
+	"item_category": item_category_button.selectedOptionLabel,
+		"date_received": date_received_button.inputText,
+			"operation_id": Operation_ID_table.selectedRow.operation_id.toString(),
+				"item_id": (function() {
+   let sum = Table1.tableData.length;
+   sum = sum + 1;
+  return sum.toString()
+   })()
+}
+}}
