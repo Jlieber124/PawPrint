@@ -3,7 +3,7 @@
 "quantity": quantity_button.inputText,
 	"item_category": item_category_button.selectedOptionLabel,
 		"date_received": date_received_button.inputText,
-			"operation_id": Operation_ID_table.selectedRow.operation_id.toString(),
+			"operation_id": operation_id_button.inputText,
 				"item_id": (function() {
    let sum = Table1.tableData.length;
    sum = sum + 1;

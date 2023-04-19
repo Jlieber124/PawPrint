@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{\n{\"brand\": brand_button.inputText,\n\"quantity\": quantity_button.inputText,\n\t\"item_category\": item_category_button.selectedOptionLabel,\n\t\t\"date_received\": date_received_button.inputText,\n\t\t\t\"operation_id\": Operation_ID_table.selectedRow.operation_id.toString(),\n\t\t\t\t\"item_id\": (function() {\n   let sum = Table1.tableData.length;\n   sum = sum + 1;\n  return sum.toString()\n   })()\n}\n}}",
+      "body": "{{\n{\"brand\": brand_button.inputText,\n\"quantity\": quantity_button.inputText,\n\t\"item_category\": item_category_button.selectedOptionLabel,\n\t\t\"date_received\": date_received_button.inputText,\n\t\t\t\"operation_id\": operation_id_button.inputText,\n\t\t\t\t\"item_id\": (function() {\n   let sum = Table1.tableData.length;\n   sum = sum + 1;\n  return sum.toString()\n   })()\n}\n}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -70,7 +70,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "\n{\"brand\": brand_button.inputText,\n\"quantity\": quantity_button.inputText,\n\t\"item_category\": item_category_button.selectedOptionLabel,\n\t\t\"date_received\": date_received_button.inputText,\n\t\t\t\"operation_id\": Operation_ID_table.selectedRow.operation_id.toString(),\n\t\t\t\t\"item_id\": (function() {\n   let sum = Table1.tableData.length;\n   sum = sum + 1;\n  return sum.toString()\n   })()\n}\n"
+      "\n{\"brand\": brand_button.inputText,\n\"quantity\": quantity_button.inputText,\n\t\"item_category\": item_category_button.selectedOptionLabel,\n\t\t\"date_received\": date_received_button.inputText,\n\t\t\t\"operation_id\": operation_id_button.inputText,\n\t\t\t\t\"item_id\": (function() {\n   let sum = Table1.tableData.length;\n   sum = sum + 1;\n  return sum.toString()\n   })()\n}\n"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
