@@ -113,7 +113,7 @@
               },
               "borderRadius": "1.5rem",
               "columnUpdatedAt": 1681933642971,
-              "originalBottomRow": 46,
+              "originalBottomRow": 48,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -256,7 +256,7 @@
                   "validation": {},
                   "cellBackground": "",
                   "customAlias": "",
-                  "onCheckChange": "{{UpdateDogClean.run(() => {}, () => showAlert('Select the row you wish to edit prior to toggling'))}}"
+                  "onCheckChange": "{{UpdateDogClean.run(() => showAlert('updated dog clean'), () => showAlert('Select the row you wish to edit prior to toggling'))}}"
                 },
                 "need_food": {
                   "allowCellWrapping": false,
@@ -354,7 +354,7 @@
                   "isSaveDisabled": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( !Dog_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "isDiscardDisabled": "{{Dog_Table.processedTableData.map((currentRow, currentIndex) => ( !Dog_Table.updatedRowIndices.includes(currentIndex)))}}",
                   "onDiscard": "{{clearStore()}}",
-                  "onSave": "{{dogNeedCare.run()}}"
+                  "onSave": "{{UpdateDogClean.run()}}"
                 }
               },
               "key": "mjusr87bbf",
@@ -372,7 +372,7 @@
               "horizontalAlignment": "CENTER",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 12,
+              "originalTopRow": 9,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -689,7 +689,7 @@
               "horizontalAlignment": "CENTER",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 55,
+              "originalTopRow": 50,
               "isVisiblePagination": true,
               "cellBackground": "#eff6ff",
               "verticalAlignment": "CENTER"
