@@ -1,0 +1,3 @@
+{{
+{"quantity": updateQuantNewQuant.inputText}
+}}

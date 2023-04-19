@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "getQuantity",
+    "name": "GetLowInventory",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/o/inventory/{{ItemID_for_Quant.inputText}}"
+        "url": "web:4000/o/low_inventory"
       },
       "invalids": [],
       "messages": [],
@@ -36,24 +36,18 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "datasourceUrl"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "ItemID_for_Quant.inputText"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Inventory Status_getQuantity",
+  "id": "Inventory Status_GetLowInventory",
   "deleted": false,
-  "gitSyncId": "643ec108865230187b28e868_643eebb4865230187b28e87e"
+  "gitSyncId": "643f4b2ab8b4c8262fb4e6fd_6440194bf6fa432285db20a7"
 }
