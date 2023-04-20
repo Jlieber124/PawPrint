@@ -7,8 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "web:4000/c/dog/{{dogID.inputText}}"
+        "url": "web:4000/c/dog/{{dogID.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -40,7 +39,7 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
     "executeOnLoad": false,
@@ -53,7 +52,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "dogID.inputText"
+      "dogID.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

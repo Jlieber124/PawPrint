@@ -935,6 +935,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "onClick"
+                },
+                {
+                  "key": "iconName"
                 }
               ],
               "displayName": "Button",
@@ -957,14 +960,21 @@
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                },
+                {
+                  "key": "iconName"
                 }
               ],
-              "text": "See / Hide Low Inventory",
+              "text": "{{ \n  (function() {\n\t\tif (appsmith.store.click == \"show\") {\n      return \"Hide Low Inventory\";\n  } else {\n      return \"Show Low Inventory\";\n  }\n})()}}",
               "isDisabled": false,
               "key": "9a5j8n1u6e",
               "isDeprecated": false,
               "rightColumn": 60,
               "isDefaultClickDisabled": true,
+              "iconName": "{{ \n  (function() {\n\t\tif (appsmith.store.click == \"show\") {\n      return \"eye-off\";\n  } else {\n      return \"eye-open\";\n  }\n})()}}",
               "widgetId": "z5cliwxmun",
               "minWidth": 120,
               "isVisible": true,
@@ -979,6 +989,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "originalBottomRow": 88,
               "buttonVariant": "SECONDARY",
+              "iconAlign": "left",
               "placement": "CENTER"
             }
           ]
